@@ -78,6 +78,35 @@
 </head>
 <body>
 
+    <!-- AÑADIDO: Botón de Menú (Hamburguesa) -->
+    <button id="menuBtn" class="fixed top-8 left-8 z-50 text-white p-2 rounded-full bg-blue-600/50 hover:bg-blue-500/80 transition shadow-lg">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+
+    <!-- AÑADIDO: Fondo del Menú (Overlay) -->
+    <div id="menuOverlay" class="fixed inset-0 bg-black/60 z-30 opacity-0 hidden transition-opacity duration-300"></div>
+    
+    <!-- AÑADIDO: Panel de Menú de Navegación -->
+    <nav id="navMenu" class="fixed top-0 left-0 h-full w-72 bg-gray-900 shadow-xl z-40 transform -translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="p-6">
+            <button id="menuCloseBtn" class="text-gray-400 hover:text-white float-right">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 class="text-2xl font-bold text-white mb-8 mt-2">Menú</h3>
+            <ul class="space-y-3">
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="0">Inicio</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="1">2. Diagnóstico</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="9">3. Justificación</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="14">4. Descripción</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="21">5. Objetivos</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="23">6. Ubicación</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="24">7. Beneficiarios</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="25">8. Metas y Resultados</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="27">Conclusión</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- 7. Contenedor de Diapositivas -->
     <main>
 
@@ -90,6 +119,10 @@
                     Implementación de Agentes de Visión Integral para mejorar la Seguridad en el BCP en Lima Metropolitana
                 </h1>
                 <p class="text-2xl text-blue-200">Mejora de la Seguridad Proactiva en el BCP</p>
+                <!-- AÑADIDO: Tu nombre -->
+                <p class="text-xl text-blue-100 mt-8 font-semibold">
+                    Felipe Ostos Bermudez
+                </p>
             </div>
         </section>
 
@@ -138,135 +171,11 @@
             </div>
         </section>
         
-        <!-- Slide 4: FODA - Oportunidades -->
+        <!-- MODIFICADO: Slide 20 (antes Pieza 6) -->
         <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
-                <h3 class="slide-subtitle text-blue-300">OPORTUNIDADES (Lo que podemos ganar)</h3>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Ser Pioneros:</strong> Liderar en Perú con IA para seguridad y reforzar la imagen de innovación.</li>
-                    <li><strong class="text-white">Ahorrar Dinero (ROI):</strong> Automatizar la vigilancia reduce costos y previene fraudes. Se estima un ROI de 200-400%.</li>
-                    <li><strong class="text-white">Cumplimiento Estratégico:</strong> Superar las nuevas exigencias de la SBS y el MININTER.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Slide 5: FODA - Debilidades -->
-        <section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
-                <h3 class="slide-subtitle text-yellow-400">DEBILIDADES (El problema a resolver)</h3>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Sistemas Aislados:</strong> Cámaras y Firewalls no se comunican.</li>
-                    <li><strong class="text-white">Dependencia Humana:</strong> Un operador se fatiga y omite hasta el 95% de la actividad tras 22 minutos.</li>
-                    <li><strong class="text-white">Sistema Reactivo:</strong> El sistema actual sirve para *investigar* después del crimen, no para *prevenirlo*.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Slide 6: FODA - Amenazas -->
-        <section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
-                <h3 class="slide-subtitle text-red-400">AMENAZAS (El riesgo externo)</h3>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Crimen Sofisticado:</strong> "Marcaje", "Skimming" y tácticas coordinadas.</li>
-                    <li><strong class="text-white">Fraudes Digitales:</strong> Ataques de Phishing y Malware en aumento (+100% en Latam).</li>
-                    <li><strong class="text-white">Riesgo de Multas y Reputación:</strong> Sanciones de reguladores y pérdida de la confianza del cliente.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Slide 7: Factibilidad -->
-        <section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">2. Diagnóstico: Factibilidad</h2>
-                <h3 class="slide-subtitle">¿Se puede hacer este proyecto? <strong class="text-green-400">Sí.</strong></h3>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Técnica:</strong> Sí. La tecnología (IA, Nube, Go, Python) existe y la dominamos.</li>
-                    <li><strong class="text-white">Económica:</strong> Sí. El BCP tiene los fondos y el ROI es claro. Usar Nube ("pago por uso") es más barato que comprar servidores.</li>
-                    <li><strong class="text-white">Administrativa:</strong> Es el mayor reto. Requiere colaboración total entre Seguridad Física, Ciberseguridad y TI.</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Slide 8: Delimitación -->
-        <section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">2. Diagnóstico: Delimitación del Proyecto</h2>
-                <h3 class="slide-subtitle">¿Qué haremos primero? (El MVP)</h3>
-                <p class="slide-text mb-4">
-                    Nos enfocaremos en el problema más crítico y visible:
-                </p>
-                <div class="bg-blue-900 p-6 rounded-lg text-center">
-                    <p class="text-2xl font-bold text-white">
-                        Detectar personas merodeando (actitud sospechosa) en los Cajeros Automáticos (ATMs).
-                    </p>
-                </div>
-                <p class="slide-text mt-4">
-                    Integraremos las alertas de PRTG y usaremos **OpenTelemetry** para vigilar la salud de nuestro nuevo sistema.
-                </p>
-            </div>
-        </section>
-
-        <!-- === 3. JUSTIFICACIÓN === -->
-        
-        <!-- Slide 9: Por qué es requerido -->
-        <section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">3. Justificación: ¿Por qué hacerlo?</h2>
-                <p class="slide-text mb-6">
-                    Para arreglar las <strong class="text-yellow-400">Debilidades</strong> (sistemas aislados, dependencia humana) y enfrentar las <strong class="text-red-400">Amenazas</strong> (crimen moderno).
-                </p>
-                <div class="flex gap-6">
-                    <div class="flex-1 bg-red-800/50 p-6 rounded-lg text-center">
-                        <h3 class="text-xl font-bold text-red-300 mb-2">MODELO ANTIGUO (REACTIVO)</h3>
-                        <p class="text-lg text-red-200">"Revisar grabaciones para ver qué pasó."</p>
-                    </div>
-                    <div class="flex-1 bg-green-800/50 p-6 rounded-lg text-center">
-                        <h3 class="text-xl font-bold text-green-300 mb-2">NUEVO MODELO (PROACTIVO)</h3>
-                        <p class="text-lg text-green-200">"Recibir una alerta para evitar que pase."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Slide 10: Impacto al Negocio -->
-        <section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">3. Justificación: Impacto al Negocio</h2>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Protege la Marca:</strong> Cuida la confianza del cliente.</li>
-                    <li><strong class="text-white">Impulsa la Innovación:</strong> Posiciona al BCP como líder tecnológico.</li>
-                    <li><strong class="text-white">Genera Rentabilidad:</strong> Ahorra costos y se conecta a la acción inmediata (alertas instantáneas a supervisores).</li>
-                    <li><strong class="text-white">Evita Sanciones:</strong> Cumple y supera las leyes de la SBS y el MININTER.</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Slide 11: Fases -->
-        <section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">3. Justificación: Plan de Acción</h2>
-                <h3 class="slide-subtitle">¿Qué, Cómo y Cuándo?</h3>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">QUÉ:</strong> El "Sistema de Agentes de Visión Integral (AVI)".</li>
-                    <li><strong class="text-white">CÓMO:</strong> Usando un stack tecnológico moderno (Go, Python, Cloud Run, pgvector, Next.js, Terraform).</li>
-                    <li><strong class="text-white">CUÁNDO (Fases):</strong>
-                        <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
-                            <li><strong class="text-blue-300">Fase 1 (MVP - 3 Meses):</strong> Detección de merodeo en 5 agencias piloto.</li>
-                            <li><strong class="text-blue-300">Fase 2 (Despliegue - 6 Meses):</strong> Instalación en toda Lima y conexión con el sistema de alertas.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Slide 20: Pieza 6 - Alertas Internas (Reemplaza Twilio) -->
-        <section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">4. Descripción: Acción</h2>
-                <h3 class="slide-subtitle">La "Acción" Inmediata (Alertas Internas)</h3>
+                <h2 class="slide-title">4. Descripción: La "Acción" Inmediata</h2>
+                <h3 class="slide-subtitle">Alertas Internas (Seguridad 100% Interna)</h3>
                 <div class="flex items-center gap-6">
                     <span class="text-8xl">🖥️</span>
                     <ul class="slide-text list-disc list-inside space-y-3">
@@ -414,8 +323,33 @@
             const nextBtn = document.getElementById('nextBtn');
             const slideCounter = document.getElementById('slideCounter');
             
+            // AÑADIDO: Elementos del Menú
+            const menuBtn = document.getElementById('menuBtn');
+            const menuCloseBtn = document.getElementById('menuCloseBtn');
+            const navMenu = document.getElementById('navMenu');
+            const menuOverlay = document.getElementById('menuOverlay');
+            const menuLinks = document.querySelectorAll('.menu-link');
+
             let currentSlide = 0;
             const totalSlides = slides.length;
+
+            // AÑADIDO: Función para abrir/cerrar menú
+            function toggleMenu() {
+                const isOpen = navMenu.classList.contains('translate-x-0');
+                if (isOpen) {
+                    navMenu.classList.remove('translate-x-0');
+                    navMenu.classList.add('-translate-x-full');
+                    menuOverlay.classList.add('opacity-0');
+                    // Ocultar el overlay después de la transición
+                    setTimeout(() => menuOverlay.classList.add('hidden'), 300); 
+                } else {
+                    navMenu.classList.add('translate-x-0');
+                    navMenu.classList.remove('-translate-x-full');
+                    menuOverlay.classList.remove('hidden');
+                    // Mostrar el overlay con transición
+                    setTimeout(() => menuOverlay.classList.remove('opacity-0'), 10); 
+                }
+            }
 
             function showSlide(slideIndex) {
                 // Ocultar la diapositiva actual
@@ -450,6 +384,20 @@
                 showSlide(currentSlide - 1);
             });
             
+            // AÑADIDO: Event Listeners del Menú
+            menuBtn.addEventListener('click', toggleMenu);
+            menuCloseBtn.addEventListener('click', toggleMenu);
+            menuOverlay.addEventListener('click', toggleMenu);
+            
+            menuLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault(); // Evitar que el link recargue
+                    const slideIndex = parseInt(e.target.dataset.slide, 10);
+                    showSlide(slideIndex);
+                    toggleMenu(); // Cerrar menú después de navegar
+                });
+            });
+
             // Event Listeners para teclado
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) {
@@ -466,4 +414,3 @@
 
 </body>
 </html>
-
