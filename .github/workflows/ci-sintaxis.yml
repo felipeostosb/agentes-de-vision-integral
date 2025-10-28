@@ -1,0 +1,25 @@
+name: 🧹 P1 - Higiene de Sintaxis HTML
+
+on:
+  push:
+    paths:
+      - 'index.html'
+  pull_request:
+    paths:
+      - 'index.html'
+
+jobs:
+  test-html-syntax:
+    name: Validar Sintaxis HTML
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 1. Checkout (Obtener código)
+        uses: actions/checkout@v4
+
+      - name: 2. Validar HTML (html-validate)
+        # Esta acción revisa que tu HTML siga los estándares
+        uses: html-validate/action@v2
+        with:
+          # Apunta a tu archivo en la raíz
+          paths: 'index.html'
