@@ -2,7 +2,7 @@ name: 🛡️ P0 - PRotección del Botón Word
 
 on:
   push:
-    # Se activa solo si 'index.html' cambia
+    # Se activa solo si 'index.html'  cambia
     paths:
       - 'index.html'
   pull_request:
