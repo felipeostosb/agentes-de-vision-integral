@@ -19,7 +19,7 @@ jobs:
 
       - name: 2. Validar HTML (html-validate)
         # Esta acción revisa que tu HTML siga los estándares
-        uses: html-validate/action@v2
+        uses: html-validate/html-validate-action@v1
         with:
           # Apunta a tu archivo en la raíz
           paths: 'index.html'
