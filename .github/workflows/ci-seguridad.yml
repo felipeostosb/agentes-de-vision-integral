@@ -11,7 +11,7 @@ on:
 
 jobs:
   test-conversion-guard:
-    name: Verificar CTA de Monetización
+    name: Verificar Boton Word
     runs-on: ubuntu-latest
     
     steps:
@@ -22,4 +22,4 @@ jobs:
         run: |
           echo "Buscando 'id=\"word\"' en index.html..."
           grep -q 'id="word"' index.html
-          echo "✅ Éxito: Guardia de Conversión P0 [OK]."
+          echo "✅ Éxito: El botón esta correcto P0 [OK]."
