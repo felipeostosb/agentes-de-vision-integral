@@ -1,0 +1,25 @@
+name: 🛡️ P0 - Guardia de Conversión
+
+on:
+  push:
+    # Se activa solo si 'index.html' cambia
+    paths:
+      - 'index.html'
+  pull_request:
+    paths:
+      - 'index.html'
+
+jobs:
+  test-conversion-guard:
+    name: Verificar CTA de Monetización
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 1. Checkout (Obtener código)
+        uses: actions/checkout@v4
+
+      - name: 2. Asegurar que el CTA P0 exista
+        run: |
+          echo "Buscando 'id=\"word\"' en index.html..."
+          grep -q 'id="word"' index.html
+          echo "✅ Éxito: Guardia de Conversión P0 [OK]."
