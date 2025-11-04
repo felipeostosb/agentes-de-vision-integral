@@ -1,25 +1,69 @@
-name: 🛡️ P0 - PRotección del Botón Word
+name: 🛡️ P0 - PRotección del Botón y Despliegue
 
 on:
   push:
-    # Se activa solo si 'index.html'  cambia
+    # Desplegará solo cuando se haga push a 'main'
+    # y solo si 'index.html' cambió.
+    branches:
+      - main
     paths:
       - 'index.html'
   pull_request:
+    # Ejecutará solo la prueba (no el despliegue) 
+    # en Pull Requests que toquen 'index.html'.
     paths:
       - 'index.html'
 
 jobs:
+  # ----------------------------------------------
+  # TRABAJO 1: TU PRUEBA (El "Guardia")
+  # ----------------------------------------------
   test-conversion-guard:
-    name: Verificar Boton Word
+    name: 1. Verificar Boton Word
     runs-on: ubuntu-latest
     
     steps:
-      - name: 1. Checkout (Obtener código)
+      - name: Checkout (Obtener código)
         uses: actions/checkout@v4
 
-      - name: 2. Asegurar que el CTA P0 exista
+      - name: Asegurar que el CTA P0 exista
         run: |
           echo "Buscando 'id=\"word\"' en index.html..."
-          grep -q 'id="word"' index.html
+          # grep -q fallará el 'step' si no encuentra el texto
+          grep -q 'id="word"' index.html 
           echo "✅ Éxito: El botón esta correcto P0 [OK]."
+
+  # ----------------------------------------------
+  # TRABAJO 2: EL DESPLIEGUE (Solo si el Job 1 pasa)
+  # ----------------------------------------------
+  deploy-to-vercel:
+    name: 2. Desplegar en Vercel
+    runs-on: ubuntu-latest
+    
+    # --- ¡LA MAGIA! ---
+    # Este 'job' DEPENDE de que el 'job' anterior
+    # llamado 'test-conversion-guard' termine con éxito.
+    needs: test-conversion-guard 
+    
+    # Condición extra: Solo despliega si el evento es un 'push'
+    # a la rama 'main' (y no un Pull Request).
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout (Obtener código)
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js (Vercel lo necesita)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Puedes cambiar esto a 18 o 20
+
+      - name: Desplegar en Vercel (Producción)
+        uses: amondnet/vercel-action@v20
+        with:
+          # Usa los secretos que configuraste en GitHub
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          # El '--prod' es para publicar en el dominio de producción
+          vercel-args: '--prod'
