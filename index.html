@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto: Agentes de Visión Integral (AVI) - BCP</title>
-    <!-- 1. Carga de TailwindCSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 1. Carga de TailwindCSS --><script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* 2. Estilo base y fuente */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
@@ -78,16 +77,13 @@
 </head>
 <body>
 
-    <!-- AÑADIDO: Botón de Menú (Hamburguesa) -->
-    <button id="menuBtn" class="fixed top-8 left-8 z-50 text-white p-2 rounded-full bg-blue-600/50 hover:bg-blue-500/80 transition shadow-lg">
+    <!-- Botón de Menú (Hamburguesa) --><button id="menuBtn" class="fixed top-8 left-8 z-50 text-white p-2 rounded-full bg-blue-600/50 hover:bg-blue-500/80 transition shadow-lg">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
     </button>
 
-    <!-- AÑADIDO: Fondo del Menú (Overlay) -->
-    <div id="menuOverlay" class="fixed inset-0 bg-black/60 z-30 opacity-0 hidden transition-opacity duration-300"></div>
+    <!-- Fondo del Menú (Overlay) --><div id="menuOverlay" class="fixed inset-0 bg-black/60 z-30 opacity-0 hidden transition-opacity duration-300"></div>
     
-    <!-- AÑADIDO: Panel de Menú de Navegación -->
-    <nav id="navMenu" class="fixed top-0 left-0 h-full w-72 bg-gray-900 shadow-xl z-40 transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <!-- Panel de Menú de Navegación --><nav id="navMenu" class="fixed top-0 left-0 h-full w-72 bg-gray-900 shadow-xl z-40 transform -translate-x-full transition-transform duration-300 ease-in-out">
         <div class="p-6">
             <button id="menuCloseBtn" class="text-gray-400 hover:text-white float-right">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -98,7 +94,7 @@
                 <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="1">2. Diagnóstico</a></li>
                 <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="9">3. Justificación</a></li>
                 <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="14">4. Descripción</a></li>
-                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="21">5. Objetivos</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="20">4. El Stack</a></li> <!-- Nuevo enlace --><li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="21">5. Objetivos</a></li>
                 <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="23">6. Ubicación</a></li>
                 <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="24">7. Beneficiarios</a></li>
                 <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="25">8. Metas y Resultados</a></li>
@@ -107,37 +103,26 @@
         </div>
     </nav>
 
-    <!-- 7. Contenedor de Diapositivas -->
-    <main>
+    <!-- Contenedor de Diapositivas --><main>
 
-        <!-- Slide 0: Título -->
-        <section class="slide active">
+        <!-- Slide 0: Título --><section class="slide active">
             <div class="slide-content text-center">
-                <!-- Eliminado por redundancia con el nuevo título largo -->
-                <!-- <div class="text-xl font-semibold text-blue-300 mb-2">Proyecto de Seguridad</div> -->
-                <h1 class="text-4xl font-bold text-white mb-6"> <!-- Tamaño ajustado de 5xl a 4xl -->
+                <h1 class="text-4xl font-bold text-white mb-6">
                     Desarrollo de Sistema de Agentes para mejorar la Seguridad Interna en BCP en Lima Metropolitana
                 </h1>
                 <p class="text-2xl text-blue-200">Mejora de la Seguridad Proactiva en el BCP</p>
-                <!-- AÑADIDO: Tu nombre -->
-                <p class="text-xl text-blue-100 mt-8 font-semibold">
-                    Felipe Ostos Bermudez
-                </p>
-                <!-- Añadir Boton-->
-                 <div id="word">
+                <div id="word">
                     <a href="https://upcedupe-my.sharepoint.com/:w:/g/personal/u201615679_upc_edu_pe/ETAIsHiamGZGlDt-VE3lpHkBdhSIIqUF63b4P6rLqXt9tA?e=5mpGdt" class="inline-block mt-4">
                         <img src="img/doc.png" alt="Icono de Word" class="w-8 h-8">
                     </a>
                 </div>
-                
-
+                <p class="text-xl text-blue-100 mt-8 font-semibold">
+                    Felipe Ostos Bermudez
+                </p>
             </div>
         </section>
 
-        <!-- === 2. DIAGNÓSTICO === -->
-
-        <!-- Slide 1: Contexto -->
-        <section class="slide">
+        <!-- === 2. DIAGNÓSTICO === --><!-- Slide 1: Contexto --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: El Contexto</h2>
                 <p class="slide-text">
@@ -151,8 +136,7 @@
             </div>
         </section>
 
-        <!-- Slide 2: Problema -->
-        <section class="slide">
+        <!-- Slide 2: Problema --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: El Problema Central</h2>
                 <p class="slide-text mb-4">
@@ -166,8 +150,7 @@
             </div>
         </section>
 
-        <!-- Slide 3: FODA - Fortalezas -->
-        <section class="slide">
+        <!-- Slide 3: FODA - Fortalezas --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
                 <h3 class="slide-subtitle text-green-400">FORTALEZAS (Lo que tenemos)</h3>
@@ -179,10 +162,7 @@
             </div>
         </section>
         
-        <!-- === INICIO DE DIAPOSITIVAS RESTAURADAS === -->
-
-        <!-- Slide 4: FODA - Oportunidades -->
-        <section class="slide">
+        <!-- Slide 4: FODA - Oportunidades --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
                 <h3 class="slide-subtitle text-blue-300">OPORTUNIDADES (Lo que podemos ganar)</h3>
@@ -194,8 +174,7 @@
             </div>
         </section>
 
-        <!-- Slide 5: FODA - Debilidades -->
-        <section class="slide">
+        <!-- Slide 5: FODA - Debilidades --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
                 <h3 class="slide-subtitle text-yellow-400">DEBILIDADES (El problema a resolver)</h3>
@@ -207,8 +186,7 @@
             </div>
         </section>
 
-        <!-- Slide 6: FODA - Amenazas -->
-        <section class="slide">
+        <!-- Slide 6: FODA - Amenazas --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
                 <h3 class="slide-subtitle text-red-400">AMENAZAS (El riesgo externo)</h3>
@@ -220,8 +198,7 @@
             </div>
         </section>
 
-        <!-- Slide 7: Factibilidad -->
-        <section class="slide">
+        <!-- Slide 7: Factibilidad --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: Factibilidad</h2>
                 <h3 class="slide-subtitle">¿Se puede hacer este proyecto? <strong class="text-green-400">Sí.</strong></h3>
@@ -233,8 +210,7 @@
             </div>
         </section>
         
-        <!-- Slide 8: Delimitación -->
-        <section class="slide">
+        <!-- Slide 8: Delimitación --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: Delimitación del Proyecto</h2>
                 <h3 class="slide-subtitle">¿Qué haremos primero? (El MVP)</h3>
@@ -252,10 +228,7 @@
             </div>
         </section>
 
-        <!-- === 3. JUSTIFICACIÓN === -->
-        
-        <!-- Slide 9: Por qué es requerido -->
-        <section class="slide">
+        <!-- === 3. JUSTIFICACIÓN === --><!-- Slide 9: Por qué es requerido --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">3. Justificación: ¿Por qué hacerlo?</h2>
                 <p class="slide-text mb-6">
@@ -274,8 +247,7 @@
             </div>
         </section>
         
-        <!-- Slide 10: Impacto al Negocio -->
-        <section class="slide">
+        <!-- Slide 10: Impacto al Negocio --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">3. Justificación: Impacto al Negocio</h2>
                 <ul class="slide-text list-disc list-inside space-y-3">
@@ -287,8 +259,7 @@
             </div>
         </section>
         
-        <!-- Slide 11: Fases -->
-        <section class="slide">
+        <!-- Slide 11: Fases --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">3. Justificación: Plan de Acción</h2>
                 <h3 class="slide-subtitle">¿Qué, Cómo y Cuándo?</h3>
@@ -305,8 +276,7 @@
             </div>
         </section>
         
-        <!-- Slide 12: Costos y Beneficios -->
-        <section class="slide">
+        <!-- Slide 12: Costos y Beneficios --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">3. Justificación: Costos y Beneficios</h2>
                 <div class="grid grid-cols-2 gap-6">
@@ -329,8 +299,7 @@
             </div>
         </section>
         
-        <!-- Slide 13: Riesgos y Alternativas -->
-        <section class="slide">
+        <!-- Slide 13: Riesgos y Alternativas --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">3. Justificación: Riesgos y Alternativas</h2>
                 <div class="grid grid-cols-2 gap-6">
@@ -353,18 +322,14 @@
             </div>
         </section>
         
-        <!-- === 4. DESCRIPCIÓN DEL PROYECTO === -->
-
-        <!-- Slide 14: Visión General -->
-        <section class="slide">
+        <!-- === 4. DESCRIPCIÓN DEL PROYECTO === --><!-- Slide 14: Visión General --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">4. Descripción del Proyecto: La Solución</h2>
                 <h3 class="slide-subtitle">¿Cómo funciona el Sistema AVI?</h3>
                 <p class="slide-text mb-6">
                     La arquitectura se divide en piezas clave que trabajan juntas, desde la agencia hasta la nube.
                 </p>
-                <!-- Diagrama simple -->
-                <div class="flex justify-between items-center text-center text-white bg-blue-900 p-8 rounded-lg">
+                <!-- Diagrama simple --><div class="flex justify-between items-center text-center text-white bg-blue-900 p-8 rounded-lg">
                     <div>
                         <span class="text-5xl">🏢</span>
                         <p class="font-bold mt-2">1. Agencia (Go)</p>
@@ -392,25 +357,23 @@
             </div>
         </section>
 
-        <!-- Slide 15: Pieza 1 - Agente Go -->
-        <section class="slide">
+        <!-- Slide 15: Pieza 1 - Agente Go (Actualizada para YOLO) --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">4. Descripción: Pieza 1</h2>
-                <h3 class="slide-subtitle">El "Vigilante" en la Agencia (Agente Golang)</h3>
+                <h3 class="slide-subtitle">El "Vigilante" en la Agencia (Agente Golang con YOLO)</h3>
                 <div class="flex items-center gap-6">
                     <span class="text-8xl">🕵️‍♂️</span>
                     <ul class="slide-text list-disc list-inside space-y-3">
                         <li>Es un programa <strong class="text-white">súper rápido y ligero</strong> (hecho en Go) que se instala en una mini-PC en cada agencia.</li>
-                        <li><strong class="text-yellow-300">Analiza el video de las cámaras localmente</strong>, en tiempo real.</li>
-                        <li><strong class="text-white">No envía video a la nube</strong>, solo envía <strong class="text-green-400">alertas pequeñas</strong> (JSON) cuando detecta una amenaza.</li>
+                        <li><strong class="text-yellow-300">Analiza el video de las cámaras localmente</strong>, usando la inteligencia de <strong class="text-green-400">YOLO (You Only Look Once)</strong> para detectar patrones y acciones sospechosas del personal.</li>
+                        <li><strong class="text-white">No envía video a la nube</strong>, solo envía <strong class="text-green-400">alertas pequeñas</strong> (JSON) cuando detecta una anomalía.</li>
                         <li>Ahorra un 99% de ancho de banda y funciona incluso si el internet es lento.</li>
                     </ul>
                 </div>
             </div>
         </section>
         
-        <!-- Slide 16: Pieza 2 - API Cloud Run -->
-        <section class="slide">
+        <!-- Slide 16: Pieza 2 - API Cloud Run --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">4. Descripción: Pieza 2</h2>
                 <h3 class="slide-subtitle">El "Cerebro" en la Nube (API Python en Cloud Run)</h3>
@@ -427,8 +390,7 @@
             </div>
         </section>
 
-        <!-- Slide 17: Pieza 3 - pgvector -->
-        <section class="slide">
+        <!-- Slide 17: Pieza 3 - pgvector --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">4. Descripción: Pieza 3</h2>
                 <h3 class="slide-subtitle">La "Súper Memoria" (Cloud SQL + pgvector)</h3>
@@ -444,8 +406,7 @@
             </div>
         </section>
 
-        <!-- Slide 18: Pieza 4 - Next.js -->
-        <section class="slide">
+        <!-- Slide 18: Pieza 4 - Next.js --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">4. Descripción: Pieza 4</h2>
                 <h3 class="slide-subtitle">El Panel de Control (Dashboard Next.js)</h3>
@@ -461,8 +422,7 @@
             </div>
         </section>
         
-        <!-- Slide 19: Pieza 5 - Automatización -->
-        <section class="slide">
+        <!-- Slide 19: Pieza 5 - Automatización --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">4. Descripción: Pieza 5</h2>
                 <h3 class="slide-subtitle">La "Fábrica" Automática (Terraform y GitHub Actions)</h3>
@@ -477,10 +437,69 @@
             </div>
         </section>
 
-        <!-- === FIN DE DIAPOSITIVAS RESTAURADAS === -->
-        
-        <!-- MODIFICADO: Slide 20 (antes Pieza 6) -->
-        <section class="slide">
+        <!-- NUEVA DIAPOSITIVA: Stack Tecnológico Consolidado --><section class="slide">
+            <div class="slide-content">
+                <h2 class="slide-title">4. Descripción: El 'Arsenal' Tecnológico (El Stack)</h2>
+                <div class="grid grid-cols-2 gap-x-10 gap-y-4 slide-text">
+                    <div class="flex items-center">
+                        <span class="text-4xl mr-4">💻</span>
+                        <div>
+                            <strong class="text-white">Lenguajes de Programación:</strong>
+                            <ul class="list-disc list-inside ml-6">
+                                <li>Go (Agentes Edge)</li>
+                                <li>Python (API, IA/ML)</li>
+                                <li>JavaScript / TypeScript (Dashboard)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-4xl mr-4">📦</span>
+                        <div>
+                            <strong class="text-white">IA / Machine Learning:</strong>
+                            <ul class="list-disc list-inside ml-6">
+                                <li>YOLO (Detección de objetos en tiempo real)</li>
+                                <li>pgvector (Búsqueda por similitud vectorial)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-4xl mr-4">☁️</span>
+                        <div>
+                            <strong class="text-white">Plataforma Cloud:</strong>
+                            <ul class="list-disc list-inside ml-6">
+                                <li>Google Cloud Platform (GCP)</li>
+                                <li>Cloud Run (API Serverless)</li>
+                                <li>Cloud SQL (Base de Datos)</li>
+                                <li>Vercel (Hosting del Dashboard)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-4xl mr-4">⚙️</span>
+                        <div>
+                            <strong class="text-white">DevOps / Automatización:</strong>
+                            <ul class="list-disc list-inside ml-6">
+                                <li>Terraform (Infraestructura como Código)</li>
+                                <li>GitHub Actions (CI/CD)</li>
+                                <li>OpenTelemetry (Observabilidad)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center col-span-2">
+                        <span class="text-4xl mr-4">📊</span>
+                        <div>
+                            <strong class="text-white">Base de Datos:</strong>
+                            <ul class="list-disc list-inside ml-6">
+                                <li>PostgreSQL con extensión pgvector</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Slide 21: La "Acción" Inmediata (Antes Pieza 6) --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">4. Descripción: La "Acción" Inmediata</h2>
                 <h3 class="slide-subtitle">Alertas Internas (Seguridad 100% Interna)</h3>
@@ -496,10 +515,7 @@
             </div>
         </section>
 
-        <!-- === 5. OBJETIVOS === -->
-
-        <!-- Slide 21: Objetivo General -->
-        <section class="slide">
+        <!-- === 5. OBJETIVOS === --><!-- Slide 22: Objetivo General --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">5. Objetivos: Objetivo General</h2>
                 <div class="bg-blue-900 p-8 rounded-lg text-center">
@@ -510,12 +526,11 @@
             </div>
         </section>
 
-        <!-- Slide 22: Objetivos Específicos -->
-        <section class="slide">
+        <!-- Slide 23: Objetivos Específicos --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">5. Objetivos: Específicos</h2>
                 <ul class="slide-text list-disc list-inside space-y-4">
-                    <li>Desarrollar los "Agentes Vigilantes" (**Go**) para analizar cámaras en el sitio.</li>
+                    <li>Desarrollar los "Agentes Vigilantes" (**Go** con **YOLO**) para analizar cámaras en el sitio.</li>
                     <li>Guardar las alertas y sus "huellas digitales" (**pgvector**) en la base de datos central.</li>
                     <li>Asegurar que el sistema sea fácil de mantener y actualizar automáticamente (**Terraform**, **GitHub Actions**).</li>
                     <li>Conectar las alertas con <strong class="text-white">notificaciones internas</strong> para automatizar la respuesta.</li>
@@ -523,10 +538,7 @@
             </div>
         </section>
         
-        <!-- === 6. UBICACIÓN === -->
-        
-        <!-- Slide 23: Ubicación -->
-        <section class="slide">
+        <!-- === 6. UBICACIÓN === --><!-- Slide 24: Ubicación --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">6. Ubicación del Proyecto</h2>
                 <ul class="slide-text list-disc list-inside space-y-3">
@@ -534,17 +546,13 @@
                     <li><strong class="text-blue-300">Fase 1 (Piloto):</strong> Se desplegará en 5 agencias seleccionadas de Lima Metropolitana.</li>
                     <li><strong class="text-blue-300">Fase 2 (Despliegue):</strong> Expansión a todas las agencias de Lima Metropolitana.</li>
                 </ul>
-                <!-- Placeholder para el croquis -->
-                <div class="w-full h-48 bg-blue-900 rounded-lg mt-6 flex items-center justify-center text-blue-300">
+                <!-- Placeholder para el croquis --><div class="w-full h-48 bg-blue-900 rounded-lg mt-6 flex items-center justify-center text-blue-300">
                     [Aquí se puede insertar una imagen del mapa o croquis]
                 </div>
             </div>
         </section>
 
-        <!-- === 7. BENEFICIARIOS === -->
-        
-        <!-- Slide 24: Beneficiarios -->
-        <section class="slide">
+        <!-- === 7. BENEFICIARIOS === --><!-- Slide 25: Beneficiarios --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">7. Beneficiarios</h2>
                 <div class="grid grid-cols-2 gap-6">
@@ -568,10 +576,7 @@
             </div>
         </section>
         
-        <!-- === 8. METAS Y RESULTADOS === -->
-
-        <!-- Slide 25: Metas (Cuantificables) -->
-        <section class="slide">
+        <!-- === 8. METAS Y RESULTADOS === --><!-- Slide 26: Metas (Cuantificables) --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">8. Metas y Resultados (Lo que mediremos)</h2>
                 <h3 class="slide-subtitle">Metas del MVP (3 Meses)</h3>
@@ -584,8 +589,7 @@
             </div>
         </section>
 
-        <!-- Slide 26: Efectos Esperados -->
-        <section class="slide">
+        <!-- Slide 27: Efectos Esperados --><section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">8. Metas y Resultados (El impacto a futuro)</h2>
                 <h3 class="slide-subtitle">Efectos Esperados del Proyecto</h3>
@@ -598,8 +602,7 @@
             </div>
         </section>
         
-        <!-- Slide 27: Conclusión -->
-        <section class="slide">
+        <!-- Slide 28: Conclusión --><section class="slide">
             <div class="slide-content text-center">
                 <h1 class="text-5xl font-bold text-white mb-6">
                     Muchas Gracias
@@ -610,28 +613,26 @@
         
     </main>
 
-    <!-- 8. Controles de Navegación -->
-    <div class="fixed bottom-8 w-full px-8 flex justify-between z-20">
+    <!-- Controles de Navegación --><div class="fixed bottom-8 w-full px-8 flex justify-between z-20">
         <button id="prevBtn" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
             ← Anterior
         </button>
         <div id="slideCounter" class="text-white text-lg font-semibold bg-black/30 py-3 px-6 rounded-full">
-            1 / 28
+            1 / 29
         </div>
         <button id="nextBtn" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
             Siguiente →
         </button>
     </div>
 
-    <!-- 9. Lógica de JavaScript para el Slider -->
-    <script>
+    <!-- Lógica de JavaScript para el Slider --><script>
         document.addEventListener('DOMContentLoaded', () => {
             const slides = document.querySelectorAll('.slide');
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
             const slideCounter = document.getElementById('slideCounter');
             
-            // AÑADIDO: Elementos del Menú
+            // Elementos del Menú
             const menuBtn = document.getElementById('menuBtn');
             const menuCloseBtn = document.getElementById('menuCloseBtn');
             const navMenu = document.getElementById('navMenu');
@@ -641,7 +642,7 @@
             let currentSlide = 0;
             const totalSlides = slides.length;
 
-            // AÑADIDO: Función para abrir/cerrar menú
+            // Función para abrir/cerrar menú
             function toggleMenu() {
                 const isOpen = navMenu.classList.contains('translate-x-0');
                 if (isOpen) {
@@ -692,7 +693,7 @@
                 showSlide(currentSlide - 1);
             });
             
-            // AÑADIDO: Event Listeners del Menú
+            // Event Listeners del Menú
             menuBtn.addEventListener('click', toggleMenu);
             menuCloseBtn.addEventListener('click', toggleMenu);
             menuOverlay.addEventListener('click', toggleMenu);
@@ -722,6 +723,3 @@
 
 </body>
 </html>
-
-
-
