@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto: Agentes de Visión Integral (AVI) - BCP</title>
-    <!-- 1. Carga de TailwindCSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- 1. Carga de TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* 2. Estilo base y fuente */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
@@ -77,13 +78,16 @@
 </head>
 <body>
 
-    <!-- Botón de Menú (Hamburguesa) --><button id="menuBtn" class="fixed top-8 left-8 z-50 text-white p-2 rounded-full bg-blue-600/50 hover:bg-blue-500/80 transition shadow-lg">
+    <!-- Botón de Menú (Hamburguesa) -->
+    <button id="menuBtn" class="fixed top-8 left-8 z-50 text-white p-2 rounded-full bg-blue-600/50 hover:bg-blue-500/80 transition shadow-lg">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
     </button>
 
-    <!-- Fondo del Menú (Overlay) --><div id="menuOverlay" class="fixed inset-0 bg-black/60 z-30 opacity-0 hidden transition-opacity duration-300"></div>
+    <!-- Fondo del Menú (Overlay) -->
+    <div id="menuOverlay" class="fixed inset-0 bg-black/60 z-30 opacity-0 hidden transition-opacity duration-300"></div>
     
-    <!-- Panel de Menú de Navegación --><nav id="navMenu" class="fixed top-0 left-0 h-full w-72 bg-gray-900 shadow-xl z-40 transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <!-- Panel de Menú de Navegación (Actualizado) -->
+    <nav id="navMenu" class="fixed top-0 left-0 h-full w-72 bg-gray-900 shadow-xl z-40 transform -translate-x-full transition-transform duration-300 ease-in-out">
         <div class="p-6">
             <button id="menuCloseBtn" class="text-gray-400 hover:text-white float-right">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -91,26 +95,28 @@
             <h3 class="text-2xl font-bold text-white mb-8 mt-2">Menú</h3>
             <ul class="space-y-3">
                 <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="0">Inicio</a></li>
-                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="1">2. Diagnóstico</a></li>
-                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="9">3. Justificación</a></li>
-                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="14">4. Descripción</a></li>
-                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="20">4. El Stack</a></li> <!-- Nuevo enlace --><li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="21">5. Objetivos</a></li>
-                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="23">6. Ubicación</a></li>
-                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="24">7. Beneficiarios</a></li>
-                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="25">8. Metas y Resultados</a></li>
-                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="27">Conclusión</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="1">Introducción</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="2">2. Diagnóstico</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="10">2.4 Factibilidad</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="11">2.5 Delimitación</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="13">3. Justificación</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="17">3.5 Riesgos</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="18">4. Descripción</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="21">5. Objetivos</a></li>
+                <li><a href="#" class="menu-link text-lg text-gray-300 hover:text-white" data-slide="23">Conclusión</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Contenedor de Diapositivas --><main>
+    <!-- Contenedor de Diapositivas -->
+    <main>
 
-        <!-- Slide 0: Título --><section class="slide active">
+        <!-- Slide 0: Título (Conservada) -->
+        <section class="slide active">
             <div class="slide-content text-center">
                 <h1 class="text-4xl font-bold text-white mb-6">
                     Desarrollo de Sistema de Agentes para mejorar la Seguridad Interna en BCP en Lima Metropolitana
                 </h1>
-                <p class="text-2xl text-blue-200">Mejora de la Seguridad Proactiva en el BCP</p>
                 <div id="word">
                     <a href="https://upcedupe-my.sharepoint.com/:w:/g/personal/u201615679_upc_edu_pe/ETAIsHiamGZGlDt-VE3lpHkBdhSIIqUF63b4P6rLqXt9tA?e=5mpGdt" class="inline-block mt-4">
                         <img src="img/doc.png" alt="Icono de Word" class="w-8 h-8">
@@ -122,510 +128,405 @@
             </div>
         </section>
 
-        <!-- === 2. DIAGNÓSTICO === --><!-- Slide 1: Contexto --><section class="slide">
+        <!-- === INICIO DE NUEVO CONTENIDO === -->
+
+        <!-- Slide 1: Introducción -->
+        <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">2. Diagnóstico: El Contexto</h2>
+                <h2 class="slide-title">Introducción</h2>
+                <p class="slide-text mb-4">
+                    El Banco de Crédito del Perú (BCP), como líder del sector, enfrenta amenazas de seguridad físicas y digitales cada vez más sofisticadas.
+                </p>
+                <p class="slide-text mb-6">
+                    El modelo de seguridad actual es <strong class="text-red-400">reactivo</strong>, opera en <strong class="text-yellow-300">silos</strong> y depende excesivamente del monitoreo humano, que es costoso y propenso a errores.
+                </p>
                 <p class="slide-text">
-                    El BCP, como líder del mercado, enfrenta amenazas de seguridad complejas.
+                    Este proyecto propone un <strong class="text-green-400">"Sistema de Agentes de Seguridad Interna"</strong> para transformar la seguridad del BCP. El objetivo es pasar a un modelo <strong class="text-green-400">proactivo e inteligente</strong>, analizando y correlacionando video en tiempo real y logs de red para anticipar amenazas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 2: 2. Diagnóstico (Resumen) -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2 class="slide-title">2. Diagnóstico: El Problema</h2>
+                <p class="slide-text">
+                    Como banco líder, el BCP es un blanco constante de robos y hackeos.
                 </p>
                 <ul class="slide-text list-disc list-inside mt-4 space-y-3">
-                    <li>Los sistemas de seguridad actuales (CCTV y Ciberseguridad) trabajan como <strong class="text-yellow-300">islas separadas</strong>.</li>
-                    <li>La seguridad depende demasiado de la <strong class="text-yellow-300">vigilancia humana</strong>, que es costosa y propensa a errores por fatiga.</li>
-                    <li>Esto crea una postura de seguridad <strong class="text-red-400 font-semibold">REACTIVA</strong>: se actúa *después* del incidente.</li>
+                    <li>Los sistemas de seguridad funcionan de forma separada: <strong class="text-yellow-300">Cámaras (CCTV) no habla con Ciberseguridad</strong>.</li>
+                    <li>La seguridad depende de personas mirando pantallas, un método <strong class="text-red-400">caro e inefectivo</strong> debido a la fatiga.</li>
+                    <li>El banco <strong class="text-red-400">reacciona a los problemas</strong> en lugar de prevenirlos.</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Slide 2: Problema --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">2. Diagnóstico: El Problema Central</h2>
-                <p class="slide-text mb-4">
-                    La seguridad es <strong class="text-red-400">REACTIVA</strong>, no <strong class="text-green-400">PROACTIVA</strong>.
-                </p>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li>Los delincuentes combinan tácticas físicas y digitales, pero los sistemas del banco <strong class="text-yellow-300">no pueden conectar los puntos</strong> a tiempo.</li>
-                    <li>No existe una visión unificada de las amenazas.</li>
-                    <li>Se necesita un sistema que use IA para <strong class="text-green-400">adelantarse a los incidentes</strong>, no solo para investigarlos después.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Slide 3: FODA - Fortalezas --><section class="slide">
+        <!-- Slide 3: FODA - Fortalezas -->
+        <section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
                 <h3 class="slide-subtitle text-green-400">FORTALEZAS (Lo que tenemos)</h3>
                 <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Respaldo Financiero:</strong> El BCP tiene los recursos para invertir en la mejor tecnología.</li>
-                    <li><strong class="text-white">Presencia Nacional:</strong> Una red de +8,300 puntos de contacto lista para el despliegue.</li>
-                    <li><strong class="text-white">Marca de Confianza:</strong> Es la marca más valiosa de Perú. La seguridad protege este activo.</li>
+                    <li><strong class="text-white">Sólida Posición Financiera:</strong> Recursos para invertir en tecnología de vanguardia.</li>
+                    <li><strong class="text-white">Infraestructura Nacional:</strong> Más de 8,340 puntos de contacto como base para el despliegue.</li>
+                    <li><strong class="text-white">Marca de Confianza:</strong> La marca más valiosa de Perú, un activo intangible que la seguridad debe proteger.</li>
                 </ul>
             </div>
         </section>
-        
-        <!-- Slide 4: FODA - Oportunidades --><section class="slide">
+
+        <!-- Slide 4: FODA - Oportunidades -->
+        <section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
                 <h3 class="slide-subtitle text-blue-300">OPORTUNIDADES (Lo que podemos ganar)</h3>
                 <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Ser Pioneros:</strong> Liderar en Perú con IA para seguridad y reforzar la imagen de innovación.</li>
-                    <li><strong class="text-white">Ahorrar Dinero (ROI):</strong> Automatizar la vigilancia reduce costos y previene fraudes. Se estima un ROI de 200-400%.</li>
-                    <li><strong class="text-white">Cumplimiento Estratégico:</strong> Superar las nuevas exigencias de la SBS y el MININTER.</li>
+                    <li><strong class="text-white">Liderazgo en Innovación:</strong> Ser pioneros en IA para seguridad bancaria en Perú.</li>
+                    <li><strong class="text-white">Cumplimiento Proactivo:</strong> Adelantarse a las exigencias regulatorias (MININTER, SBS).</li>
+                    <li><strong class="text-white">Eficiencia Operativa (ROI):</strong> Retorno de 200-400% en 3 años por automatización y reducción de costos de personal (30-50%).</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Slide 5: FODA - Debilidades --><section class="slide">
+        <!-- Slide 5: FODA - Debilidades -->
+        <section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
                 <h3 class="slide-subtitle text-yellow-400">DEBILIDADES (El problema a resolver)</h3>
                 <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Sistemas Aislados:</strong> Cámaras y Firewalls no se comunican.</li>
-                    <li><strong class="text-white">Dependencia Humana:</strong> Un operador se fatiga y omite hasta el 95% de la actividad tras 22 minutos.</li>
-                    <li><strong class="text-white">Sistema Reactivo:</strong> El sistema actual sirve para *investigar* después del crimen, no para *prevenirlo*.</li>
+                    <li><strong class="text-white">Sistemas en Silos:</strong> Seguridad física (CCTV) y ciberseguridad (IDS) no tienen visión correlacionada.</li>
+                    <li><strong class="text-white">Dependencia Humana:</strong> Un operador puede omitir hasta el 95% de la actividad en pantalla tras 22 minutos por fatiga.</li>
+                    <li><strong class="text-white">Postura Reactiva:</strong> Los sistemas están diseñados para investigación forense (después), no para prevención (antes).</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Slide 6: FODA - Amenazas --><section class="slide">
+        <!-- Slide 6: FODA - Amenazas -->
+        <section class="slide">
             <div class="slide-content">
                 <h2 class="slide-title">2. Diagnóstico: Análisis FODA</h2>
                 <h3 class="slide-subtitle text-red-400">AMENAZAS (El riesgo externo)</h3>
                 <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Crimen Sofisticado:</strong> "Marcaje", "Skimming" y tácticas coordinadas.</li>
-                    <li><strong class="text-white">Fraudes Digitales:</strong> Ataques de Phishing y Malware en aumento (+100% en Latam).</li>
-                    <li><strong class="text-white">Riesgo de Multas y Reputación:</strong> Sanciones de reguladores y pérdida de la confianza del cliente.</li>
+                    <li><strong class="text-white">Sofisticación del Crimen:</strong> "Marcaje" y "Skimming" (aumento del 4% en delitos patrimoniales).</li>
+                    <li><strong class="text-white">Escalada de Ciberataques:</strong> Fraude por malware aumentó 113% en Latam; 70% de entidades sufrieron ataques.</li>
+                    <li><strong class="text-white">Riesgo Regulatorio y Reputacional:</strong> Multas (ej. ANPD) y pérdida de confianza (57% de peruanos preocupados por el crimen).</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Slide 7: Factibilidad --><section class="slide">
+        <!-- Slide 7: 2.1 Contexto de la Empresa -->
+        <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">2. Diagnóstico: Factibilidad</h2>
-                <h3 class="slide-subtitle">¿Se puede hacer este proyecto? <strong class="text-green-400">Sí.</strong></h3>
+                <h2 class="slide-title">2.1 Contexto de la Empresa</h2>
                 <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Técnica:</strong> Sí. La tecnología (IA, Nube, Go, Python) existe y la dominamos.</li>
-                    <li><strong class="text-white">Económica:</strong> Sí. El BCP tiene los fondos y el ROI es claro. Usar Nube ("pago por uso") es más barato que comprar servidores.</li>
-                    <li><strong class="text-white">Administrativa:</strong> Es el mayor reto. Requiere colaboración total entre Seguridad Física, Ciberseguridad y TI.</li>
+                    <li>El BCP es el banco con mayor cuota de mercado nacional y una de las empresas más representativas de Perú.</li>
+                    <li>Por su posición, es un objetivo principal para el crimen organizado y el fraude.</li>
+                    <li>Opera en un entorno de alto riesgo con una vasta infraestructura (+8,340 puntos) que exige una seguridad compleja e integrada.</li>
                 </ul>
             </div>
         </section>
-        
-        <!-- Slide 8: Delimitación --><section class="slide">
+
+        <!-- Slide 8: 2.2 Organigrama -->
+        <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">2. Diagnóstico: Delimitación del Proyecto</h2>
-                <h3 class="slide-subtitle">¿Qué haremos primero? (El MVP)</h3>
-                <p class="slide-text mb-4">
-                    Nos enfocaremos en el problema más crítico y visible:
+                <h2 class="slide-title">2.2 Organigrama (Áreas Clave)</h2>
+                <p class="slide-text">
+                    Las áreas clave para este proyecto son las vicepresidencias de Operaciones/Tecnología y las gerencias de:
                 </p>
-                <div class="bg-blue-900 p-6 rounded-lg text-center">
-                    <p class="text-2xl font-bold text-white">
-                        Detectar personas merodeando (actitud sospechosa) en los Cajeros Automáticos (ATMs).
+                <ul class="slide-text list-disc list-inside mt-4 space-y-3">
+                    <li>Seguridad Integral (Física)</li>
+                    <li>Ciberseguridad (CSOC)</li>
+                </ul>
+                <p class="slide-text mt-4">
+                    <strong class="text-yellow-300">El problema actual:</strong> Estas gerencias operan en silos. Este proyecto busca mitigar esa debilidad integrando sus fuentes de datos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 9: 2.3 Definición del Problema -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2 class="slide-title">2.3 Definición del Problema (Resumen)</h2>
+                <p class="slide-text">
+                    Debido a la constante evolución de amenazas físicas y virtuales, y por un histórico reactivo, es necesario contar con <strong class="text-green-400">técnicas modernas de detección de fraude en tiempo real</strong> que mejoren, comuniquen e integren un mejor sistema de seguridad.
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 10: 2.4 Factibilidad -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2 class="slide-title">2.4 Factibilidad del Proyecto</h2>
+                <ul class="slide-text list-disc list-inside space-y-3">
+                    <li><strong class="text-green-400">Técnica (Alta):</strong> Arquitectura moderna (Microservicios, Go, Python/LangGraph, YOLO, Pub/Sub). Tecnologías maduras.</li>
+                    <li><strong class="text-green-400">Económica (Viable):</strong> Alto ROI (200-400% a 3 años) basado en prevención de pérdidas y optimización de costos de personal (30-50%).</li>
+                    <li><strong class="text-yellow-400">Administrativa (Desafío):</strong> El reto principal es lograr la colaboración entre Seguridad Física y Ciberseguridad.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 11: 2.5 Delimitación (Técnico/MVP) -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2 class="slide-title">2.5 Delimitación: Alcance Técnico (MVP)</h2>
+                <p class="slide-text mb-4">
+                    El Producto Mínimo Viable (MVP) se centrará <strong class="text-yellow-300">exclusivamente</strong> en:
+                </p>
+                <div class="bg-blue-900 p-6 rounded-lg">
+                    <p class="text-xl font-bold text-white text-center">
+                        Detectar merodeo sospechoso en cajeros automáticos y cámaras de ventanilla.
                     </p>
                 </div>
+                <ul class="slide-text list-disc list-inside mt-4 space-y-3">
+                    <li>Involucrará al Agente 1 (Visión) analizando video y al Agente 2 (Logs) analizando alertas de PRTG.</li>
+                    <li>El Agente 3 (Correlación) solo correlacionará estos dos eventos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 12: 2.5 Delimitación (Económica/Infra) -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2 class="slide-title">2.5 Delimitación: Económica e Infraestructura</h2>
+                <ul class="slide-text list-disc list-inside space-y-4">
+                    <li><strong class="text-white">Económica:</strong> El presupuesto cubre solo el diseño, desarrollo y despliegue piloto del MVP en agencias seleccionadas de Lima. No incluye el despliegue nacional.</li>
+                    <li><strong class="text-white">Infraestructura (Nube):</strong> Servicios centrales (API Go, IA Python, Pub/Sub) operarán en <strong class="text-cyan-300">GCP</strong>.</li>
+                    <li><strong class="text-white">Infraestructura (Borde):</strong> El procesamiento de video (YOLO/OpenCV) se hará localmente en las agencias (<strong class="text-cyan-300">Edge Computing</strong>) sobre el hardware existente, enviando solo metadatos a la nube.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 13: 3.1 Adecuación al Plan Estratégico -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2 class="slide-title">3.1 Justificación: Alineamiento Estratégico</h2>
+                <ul class="slide-text list-disc list-inside space-y-2">
+                    <li><strong class="text-white">Protección de la Marca y Confianza:</strong> Resguarda el activo más valioso del BCP, su reputación.</li>
+                    <li><strong class="text-white">Liderazgo en Innovación Digital:</strong> Se alinea con la transformación digital, modernizando la seguridad.</li>
+                    <li><strong class="text-white">Eficiencia Operativa y Rentabilidad:</strong> Impacta la rentabilidad al reducir costos operativos (vigilancia manual).</li>
+                    <li><strong class="text-white">Gestión de Riesgos y Cumplimiento:</strong> Asegura el cumplimiento proactivo de regulaciones (SBS, MININTER).</li>
+                    <li><strong class="text-white">Estabilidad del Sistema Financiero:</strong> Fortalece al pilar del sistema financiero peruano.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 14: 3.2 Por qué es requerido -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2 class="slide-title">3.2 Justificación: ¿Por qué es requerido?</h2>
+                <p class="slide-text">
+                    El proyecto es requerido para transformar la seguridad de un modelo <strong class="text-red-400">reactivo a uno proactivo</strong>.
+                </p>
                 <p class="slide-text mt-4">
-                    Integraremos las alertas de PRTG y usaremos **OpenTelemetry** para vigilar la salud de nuestro nuevo sistema.
+                    El sistema actual (basado en monitoreo humano y silos) es <strong class="text-yellow-300">costoso, ineficiente (propenso a fatiga)</strong> e incapaz de correlacionar amenazas físicas (CCTV) y lógicas (logs de red) en tiempo real.
+                </p>
+                <p class="slide-text mt-4">
+                    Esto genera <strong class="text-red-400">vulnerabilidades críticas</strong>, pérdidas financieras y alto riesgo reputacional.
                 </p>
             </div>
         </section>
 
-        <!-- === 3. JUSTIFICACIÓN === --><!-- Slide 9: Por qué es requerido --><section class="slide">
+        <!-- Slide 15: 3.3 Costos y Beneficios -->
+        <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">3. Justificación: ¿Por qué hacerlo?</h2>
-                <p class="slide-text mb-6">
-                    Para arreglar las <strong class="text-yellow-400">Debilidades</strong> (sistemas aislados, dependencia humana) y enfrentar las <strong class="text-red-400">Amenazas</strong> (crimen moderno).
-                </p>
-                <div class="flex gap-6">
-                    <div class="flex-1 bg-red-800/50 p-6 rounded-lg text-center">
-                        <h3 class="text-xl font-bold text-red-300 mb-2">MODELO ANTIGUO (REACTIVO)</h3>
-                        <p class="text-lg text-red-200">"Revisar grabaciones para ver qué pasó."</p>
-                    </div>
-                    <div class="flex-1 bg-green-800/50 p-6 rounded-lg text-center">
-                        <h3 class="text-xl font-bold text-green-300 mb-2">NUEVO MODELO (PROACTIVO)</h3>
-                        <p class="text-lg text-green-200">"Recibir una alerta para evitar que pase."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Slide 10: Impacto al Negocio --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">3. Justificación: Impacto al Negocio</h2>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Protege la Marca:</strong> Cuida la confianza del cliente.</li>
-                    <li><strong class="text-white">Impulsa la Innovación:</strong> Posiciona al BCP como líder tecnológico.</li>
-                    <li><strong class="text-white">Genera Rentabilidad:</strong> Ahorra costos y se conecta a la acción inmediata (alertas instantáneas a supervisores).</li>
-                    <li><strong class="text-white">Evita Sanciones:</strong> Cumple y supera las leyes de la SBS y el MININTER.</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Slide 11: Fases --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">3. Justificación: Plan de Acción</h2>
-                <h3 class="slide-subtitle">¿Qué, Cómo y Cuándo?</h3>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">QUÉ:</strong> El "Sistema de Agentes de Visión Integral (AVI)".</li>
-                    <li><strong class="text-white">CÓMO:</strong> Usando un stack tecnológico moderno (Go, Python, Cloud Run, pgvector, Next.js, Terraform).</li>
-                    <li><strong class="text-white">CUÁNDO (Fases):</strong>
-                        <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
-                            <li><strong class="text-blue-300">Fase 1 (MVP - 3 Meses):</strong> Detección de merodeo en 5 agencias piloto.</li>
-                            <li><strong class="text-blue-300">Fase 2 (Despliegue - 6 Meses):</strong> Instalación en toda Lima y conexión con el sistema de alertas.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Slide 12: Costos y Beneficios --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">3. Justificación: Costos y Beneficios</h2>
+                <h2 class="slide-title">3.3 Justificación: Costos y Beneficios</h2>
                 <div class="grid grid-cols-2 gap-6">
                     <div>
                         <h3 class="slide-subtitle text-green-400">Beneficios</h3>
                         <ul class="slide-text list-disc list-inside">
-                            <li>Menos robos y fraudes.</li>
-                            <li>Personal de seguridad más eficiente.</li>
-                            <li><strong class="text-yellow-300">Ventaja Competitiva (Moat):</strong> Una base de datos que aprende patrones de delincuentes.</li>
+                            <li>Reducción de pérdidas financieras.</li>
+                            <li>Automatización de la vigilancia 24/7.</li>
+                            <li>Optimización de costos de personal (30-50%).</li>
+                            <li><strong class="text-yellow-300">ROI estimado: 200-400%</strong> en 3 años.</li>
+                            <li>Fortalecimiento de la confianza.</li>
                         </ul>
                     </div>
                     <div>
                         <h3 class="slide-subtitle text-blue-300">Costos</h3>
                         <ul class="slide-text list-disc list-inside">
-                            <li>Inversión inicial en desarrollo.</li>
-                            <li><strong class="text-green-400">Costos de operación BAJOS</strong> gracias a la Nube "Serverless" (pago por uso).</li>
+                            <li>Costos de desarrollo e ingeniería.</li>
+                            <li>Costos de infraestructura en la nube (GCP).</li>
+                            <li>Costos de capacitación del personal.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <!-- Slide 13: Riesgos y Alternativas --><section class="slide">
+
+        <!-- Slide 16: 3.4 Qué, Cómo y Cuándo -->
+        <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">3. Justificación: Riesgos y Alternativas</h2>
+                <h2 class="slide-title">3.4 Justificación: Plan de Acción (MVP)</h2>
+                <ul class="slide-text list-disc list-inside space-y-3">
+                    <li><strong class="text-white">QUÉ:</strong> Un MVP del "Sistema de Agentes de Seguridad Integral", enfocado en merodeo y alertas de red.</li>
+                    <li><strong class="text-white">CÓMO:</strong> Una API orquestadora en <strong class="text-cyan-300">Go</strong> recibirá eventos (de <strong class="text-cyan-300">YOLO</strong> en el borde y <strong class="text-cyan-300">PRTG</strong>). Los eventos se publicarán en <strong class="text-cyan-300">Google Pub/Sub</strong> y serán consumidos por microservicios en <strong class="text-cyan-300">Python (FastAPI/LangGraph)</strong> que alojan a tres agentes de IA (Visión, Logs, Correlación).</li>
+                    <li><strong class="text-white">CUÁNDO (6 Meses):</strong>
+                        <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
+                            <li><strong>Mes 1-2:</strong> Diseño de Arq., Desarrollo API (Go) y Agentes (Python).</li>
+                            <li><strong>Mes 3-4:</strong> Entrenamiento de Modelos (YOLO) y Recolección de Logs.</li>
+                            <li><strong>Mes 5-6:</strong> Pruebas integrales y Despliegue Piloto.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 17: 3.5 Riesgos y Alternativas -->
+        <section class="slide">
+            <div class="slide-content">
+                <h2 class="slide-title">3.5 Justificación: Riesgos y Alternativas</h2>
                 <div class="grid grid-cols-2 gap-6">
                     <div>
                         <h3 class="slide-subtitle text-yellow-400">Riesgos y Mitigaciones</h3>
-                        <ul class="slide-text list-disc list-inside">
-                            <li><strong>Riesgo:</strong> ¿Falsas alarmas? <br> <strong class="text-green-300">Solución:</strong> Reentrenar la IA.</li>
-                            <li><strong>Riesgo:</strong> ¿Rechazo del personal? <br> <strong class="text-green-300">Solución:</strong> Capacitación y diseño fácil.</li>
-                            <li><strong>Riesgo:</strong> ¿Fallo de internet? <br> <strong class="text-green-300">Solución:</strong> El Agente local (Go) funciona offline.</li>
+                        <ul class="slide-text list-disc list-inside text-sm">
+                            <li><strong>Riesgo:</strong> ¿IA con falsos positivos? <br> <strong class="text-green-300">Mitigación:</strong> Re-entrenamiento continuo.</li>
+                            <li><strong>Riesgo:</strong> ¿Resistencia a la adopción? <br> <strong class="text-green-300">Mitigación:</strong> Involucrar a operadores en el diseño.</li>
+                            <li><strong>Riesgo:</strong> ¿Privacidad de datos? <br> <strong class="text-green-300">Mitigación:</strong> Edge Computing (sólo metadatos de siluetas, no rostros, van a la nube).</li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="slide-subtitle text-red-400">Alternativas (¿Por qué no...?)</h3>
-                        <ul class="slide-text list-disc list-inside">
-                            <li><strong>¿Comprar software?</strong> <br> Es caro, no personalizable y nos "amarra" a un proveedor.</li>
-                            <li><strong>¿Contratar más guardias?</strong> <br> No escala, es más caro y no resuelve la fatiga humana.</li>
+                        <h3 class="slide-subtitle text-red-400">Alternativas</h3>
+                        <ul class="slide-text list-disc list-inside text-sm">
+                            <li><strong>Alternativa 1 (Status Quo):</strong> No hacer nada. <br> <strong class="text-red-300">Resultado:</strong> Inaceptable. El riesgo y las pérdidas aumentan.</li>
+                            <li><strong>Alternativa 2 (Comprar COTS):</strong> Comprar un SIEM/SOAR. <br> <strong class="text-red-300">Resultado:</strong> Costos muy elevados, poca flexibilidad, dependencia de terceros.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <!-- === 4. DESCRIPCIÓN DEL PROYECTO === --><!-- Slide 14: Visión General --><section class="slide">
+
+        <!-- Slide 18: 4.1 Funcionamiento (Flujo) -->
+        <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">4. Descripción del Proyecto: La Solución</h2>
-                <h3 class="slide-subtitle">¿Cómo funciona el Sistema AVI?</h3>
-                <p class="slide-text mb-6">
-                    La arquitectura se divide en piezas clave que trabajan juntas, desde la agencia hasta la nube.
+                <h2 class="slide-title">4.1 Descripción: Funcionamiento del Sistema</h2>
+                <p class="slide-text text-sm leading-relaxed">
+                    <strong class="text-white">1. INGESTA (Borde):</strong> <strong class="text-cyan-300">YOLO/OpenCV</strong> analiza cámaras en la agencia y extrae metadatos (siluetas, no rostros). Paralelamente, se monitorean logs de <strong class="text-cyan-300">PRTG</strong>.
+                    <br><br>
+                    <strong class="text-white">2. ORQUESTACIÓN (Nube):</strong> Los metadatos y eventos se envían a una <strong class="text-cyan-300">API Orquestadora (Go)</strong> de alta concurrencia, que los publica inmediatamente en <strong class="text-cyan-300">Google Pub/Sub</strong> (un bus de mensajería).
+                    <br><br>
+                    <strong class="text-white">3. PROCESAMIENTO (Nube):</strong> Un <strong class="text-cyan-300">Microservicio de IA (Python/FastAPI)</strong> se suscribe a Pub/Sub. <strong class="text-cyan-300">LangGraph</strong> coordina un equipo de 3 agentes: <strong class="text-yellow-300">Agente 1 (Visión)</strong>, <strong class="text-yellow-300">Agente 2 (Logs)</strong> y <strong class="text-yellow-300">Agente 3 (Correlación)</strong>.
+                    <br><br>
+                    <strong class="text-white">4. ALERTA Y ALMACENAMIENTO (Nube):</strong> El Agente 3 conecta los hallazgos (ej. "Merodeo" + "ATM sin conexión") y guarda la alerta en <strong class="text-cyan-300">PostgreSQL + pgvector</strong>.
                 </p>
-                <!-- Diagrama simple --><div class="flex justify-between items-center text-center text-white bg-blue-900 p-8 rounded-lg">
-                    <div>
-                        <span class="text-5xl">🏢</span>
-                        <p class="font-bold mt-2">1. Agencia (Go)</p>
-                        <p class="text-sm">Detecta</p>
-                    </div>
-                    <span class="text-4xl text-blue-300">➡️</span>
-                    <div>
-                        <span class="text-5xl">☁️</span>
-                        <p class="font-bold mt-2">2. Nube (Cloud Run)</p>
-                        <p class="text-sm">Recibe</p>
-                    </div>
-                    <span class="text-4xl text-blue-300">➡️</span>
-                    <div>
-                        <span class="text-5xl">💾</span>
-                        <p class="font-bold mt-2">3. Base de Datos (pgvector)</p>
-                        <p class="text-sm">Guarda y Analiza</p>
-                    </div>
-                    <span class="text-4xl text-blue-300">➡️</span>
-                    <div>
-                        <span class="text-5xl">🖥️</span>
-                        <p class="font-bold mt-2">4. Dashboard (Next.js)</p>
-                        <p class="text-sm">Muestra</p>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!-- Slide 15: Pieza 1 - Agente Go (Actualizada para YOLO) --><section class="slide">
+        <!-- Slide 19: 4.2 Software y Herramientas (El Stack) -->
+        <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">4. Descripción: Pieza 1</h2>
-                <h3 class="slide-subtitle">El "Vigilante" en la Agencia (Agente Golang con YOLO)</h3>
-                <div class="flex items-center gap-6">
-                    <span class="text-8xl">🕵️‍♂️</span>
-                    <ul class="slide-text list-disc list-inside space-y-3">
-                        <li>Es un programa <strong class="text-white">súper rápido y ligero</strong> (hecho en Go) que se instala en una mini-PC en cada agencia.</li>
-                        <li><strong class="text-yellow-300">Analiza el video de las cámaras localmente</strong>, usando la inteligencia de <strong class="text-green-400">YOLO (You Only Look Once)</strong> para detectar patrones y acciones sospechosas del personal.</li>
-                        <li><strong class="text-white">No envía video a la nube</strong>, solo envía <strong class="text-green-400">alertas pequeñas</strong> (JSON) cuando detecta una anomalía.</li>
-                        <li>Ahorra un 99% de ancho de banda y funciona incluso si el internet es lento.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Slide 16: Pieza 2 - API Cloud Run --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">4. Descripción: Pieza 2</h2>
-                <h3 class="slide-subtitle">El "Cerebro" en la Nube (API Python en Cloud Run)</h3>
-                <div class="flex items-center gap-6">
-                    <span class="text-8xl">🧠</span>
-                    <ul class="slide-text list-disc list-inside space-y-3">
-                        <li>Es el "cerebro" central que recibe todas las alertas de todas las agencias.</li>
-                        <li>Está hecho en <strong class="text-white">Python</strong> (el mejor lenguaje para IA).</li>
-                        <li>Usa <strong class="text-cyan-300">Cloud Run (Serverless)</strong>, que es como un servicio "mágico".</li>
-                        <li><strong class="text-yellow-300">No hay servidor prendido 24/7</strong>. Se "despierta" solo cuando llega una alerta y se "duerme" al instante.</li>
-                        <li><strong class="text-green-400">Resultado:</strong> Costo casi cero y escala automáticamente a millones de alertas.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Slide 17: Pieza 3 - pgvector --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">4. Descripción: Pieza 3</h2>
-                <h3 class="slide-subtitle">La "Súper Memoria" (Cloud SQL + pgvector)</h3>
-                <div class="flex items-center gap-6">
-                    <span class="text-8xl">💾</span>
-                    <ul class="slide-text list-disc list-inside space-y-3">
-                        <li>Es la base de datos (PostgreSQL) donde guardamos las alertas.</li>
-                        <li><strong class="text-yellow-300">EL SUPERPODER (MOAT):</strong> Usamos <strong class="text-white">pgvector</strong>.</li>
-                        <li>Esto guarda la <strong class="text-cyan-300">"huella digital"</strong> (un *embedding* vectorial) de cada amenaza (rostro, ropa, etc.).</li>
-                        <li><strong class="text-green-400">¿Por qué?</strong> Permite hacer "búsqueda por similitud":<br> <em>"Muéstrame dónde más ha aparecido esta persona en toda Lima".</em></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Slide 18: Pieza 4 - Next.js --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">4. Descripción: Pieza 4</h2>
-                <h3 class="slide-subtitle">El Panel de Control (Dashboard Next.js)</h3>
-                <div class="flex items-center gap-6">
-                    <span class="text-8xl">🖥️</span>
-                    <ul class="slide-text list-disc list-inside space-y-3">
-                        <li>Es la página web moderna donde el personal de seguridad ve las alertas.</li>
-                        <li>Hecha con <strong class="text-white">Next.js</strong> y desplegada en <strong class="text-white">Vercel</strong>.</li>
-                        <li><strong class="text-green-400">En español simple:</strong> Será una aplicación web ultra-rápida, en tiempo real y muy fácil de usar (como una app de celular).</li>
-                        <li>El operador puede filtrar, buscar y ver las alertas al instante.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Slide 19: Pieza 5 - Automatización --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">4. Descripción: Pieza 5</h2>
-                <h3 class="slide-subtitle">La "Fábrica" Automática (Terraform y GitHub Actions)</h3>
-                <div class="flex items-center gap-6">
-                    <span class="text-8xl">🏭</span>
-                    <ul class="slide-text list-disc list-inside space-y-3">
-                        <li><strong class="text-cyan-300">Terraform:</strong> Son los "planos digitales" de nuestro sistema. No creamos servidores a mano (con clics). Escribimos código que define toda la infraestructura.</li>
-                        <li><strong class="text-cyan-300">GitHub Actions:</strong> Es la "línea de ensamblaje". Cuando un programador mejora el código, esta herramienta lo prueba y lo despliega automáticamente.</li>
-                        <li><strong class="text-green-400">Ventaja:</strong> Velocidad, seguridad y consistencia. Podemos desplegar mejoras en 5 minutos, no en 5 días.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- NUEVA DIAPOSITIVA: Stack Tecnológico Consolidado --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">4. Descripción: El 'Arsenal' Tecnológico (El Stack)</h2>
+                <h2 class="slide-title">4.2 Descripción: Software y Herramientas (El Stack)</h2>
                 <div class="grid grid-cols-2 gap-x-10 gap-y-4 slide-text">
-                    <div class="flex items-center">
-                        <span class="text-4xl mr-4">💻</span>
-                        <div>
-                            <strong class="text-white">Lenguajes de Programación:</strong>
-                            <ul class="list-disc list-inside ml-6">
-                                <li>Go (Agentes Edge)</li>
-                                <li>Python (API, IA/ML)</li>
-                                <li>JavaScript / TypeScript (Dashboard)</li>
-                            </ul>
-                        </div>
+                    <div>
+                        <strong class="text-white">Backend (Orquestador):</strong>
+                        <ul class="list-disc list-inside ml-6 text-cyan-300">
+                            <li>Go (Golang) [Framework Gin o Echo]</li>
+                        </ul>
                     </div>
-                    <div class="flex items-center">
-                        <span class="text-4xl mr-4">📦</span>
-                        <div>
-                            <strong class="text-white">IA / Machine Learning:</strong>
-                            <ul class="list-disc list-inside ml-6">
-                                <li>YOLO (Detección de objetos en tiempo real)</li>
-                                <li>pgvector (Búsqueda por similitud vectorial)</li>
-                            </ul>
-                        </div>
+                    <div>
+                        <strong class="text-white">IA / Microservicios:</strong>
+                        <ul class="list-disc list-inside ml-6 text-cyan-300">
+                            <li>Python</li>
+                            <li>FastAPI (API del Microservicio)</li>
+                            <li>LangGraph (Orquestación de Agentes)</li>
+                        </ul>
                     </div>
-                    <div class="flex items-center">
-                        <span class="text-4xl mr-4">☁️</span>
-                        <div>
-                            <strong class="text-white">Plataforma Cloud:</strong>
-                            <ul class="list-disc list-inside ml-6">
-                                <li>Google Cloud Platform (GCP)</li>
-                                <li>Cloud Run (API Serverless)</li>
-                                <li>Cloud SQL (Base de Datos)</li>
-                                <li>Vercel (Hosting del Dashboard)</li>
-                            </ul>
-                        </div>
+                    <div>
+                        <strong class="text-white">Visión por Computadora:</strong>
+                        <ul class="list-disc list-inside ml-6 text-cyan-300">
+                            <li>OpenCV</li>
+                            <li>YOLOv8</li>
+                        </ul>
                     </div>
-                    <div class="flex items-center">
-                        <span class="text-4xl mr-4">⚙️</span>
-                        <div>
-                            <strong class="text-white">DevOps / Automatización:</strong>
-                            <ul class="list-disc list-inside ml-6">
-                                <li>Terraform (Infraestructura como Código)</li>
-                                <li>GitHub Actions (CI/CD)</li>
-                                <li>OpenTelemetry (Observabilidad)</li>
-                            </ul>
-                        </div>
+                    <div>
+                        <strong class="text-white">Infraestructura Nube (GCP):</strong>
+                        <ul class="list-disc list-inside ml-6 text-cyan-300">
+                            <li>Google Pub/Sub (Bus de Mensajería)</li>
+                            <li>Google Cloud Run (Serverless)</li>
+                        </ul>
                     </div>
-                    <div class="flex items-center col-span-2">
-                        <span class="text-4xl mr-4">📊</span>
-                        <div>
-                            <strong class="text-white">Base de Datos:</strong>
-                            <ul class="list-disc list-inside ml-6">
-                                <li>PostgreSQL con extensión pgvector</li>
-                            </ul>
-                        </div>
+                    <div>
+                        <strong class="text-white">Base de Datos:</strong>
+                        <ul class="list-disc list-inside ml-6 text-cyan-300">
+                            <li>Supabase (PostgreSQL)</li>
+                            <li>pgvector (Búsqueda Vectorial)</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <strong class="text-white">Monitoreo (Fuente):</strong>
+                        <ul class="list-disc list-inside ml-6 text-cyan-300">
+                            <li>PRTG Network Monitor</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- Slide 21: La "Acción" Inmediata (Antes Pieza 6) --><section class="slide">
+        <!-- Slide 20: 4.3 Técnicas y Estándares (La Arq.) -->
+        <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">4. Descripción: La "Acción" Inmediata</h2>
-                <h3 class="slide-subtitle">Alertas Internas (Seguridad 100% Interna)</h3>
-                <div class="flex items-center gap-6">
-                    <span class="text-8xl">🖥️</span>
-                    <ul class="slide-text list-disc list-inside space-y-3">
-                        <li>La IA no solo "mira", también "actúa".</li>
-                        <li>Cuando el "Cerebro" (Cloud Run) recibe una alerta de alta prioridad...</li>
-                        <li>Genera una <strong class="text-green-400">notificación crítica</strong> en el dashboard y puede integrarse con sistemas de alerta internos del BCP (ej. email o intranet).</li>
-                        <li><strong class="text-white">Resultado:</strong> Se conecta la detección de IA (segundos) con la acción humana (segundos), <strong class="text-yellow-300">manteniendo la data 100% interna.</strong></li>
-                    </ul>
-                </div>
+                <h2 class="slide-title">4.3 Descripción: Técnicas y Estándares</h2>
+                <ul class="slide-text list-disc list-inside space-y-3">
+                    <li><strong class="text-white">Arquitectura:</strong> <strong class="text-cyan-300">Microservicios</strong> y <strong class="text-cyan-300">Arquitectura Orientada a Eventos (EDA)</strong>. Esto da un sistema desacoplado, resiliente y escalable.</li>
+                    <li><strong class="text-white">Despliegue Híbrido:</strong> <strong class="text-cyan-300">Edge Computing</strong> (YOLO en agencia) para baja latencia y privacidad; y <strong class="text-cyan-300">Cloud Computing Serverless</strong> (Cloud Run) para optimizar costos.</li>
+                    <li><strong class="text-white">Técnicas de IA:</strong> <strong class="text-cyan-300">Computer Vision</strong> (YOLO), <strong class="text-cyan-300">Agentes Autónomos</strong> (LangGraph) para crear un "equipo" de especialistas, y <strong class="text-cyan-300">Búsqueda Vectorial</strong> (pgvector).</li>
+                    <li><strong class="text-white">Estándares:</strong> API RESTful y estricto cumplimiento de la ley de protección de datos (anonimización de video).</li>
+                </ul>
             </div>
         </section>
 
-        <!-- === 5. OBJETIVOS === --><!-- Slide 22: Objetivo General --><section class="slide">
+        <!-- Slide 21: 5.1 Objetivo General -->
+        <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">5. Objetivos: Objetivo General</h2>
+                <h2 class="slide-title">5.1 Objetivo General</h2>
                 <div class="bg-blue-900 p-8 rounded-lg text-center">
                     <p class="text-3xl font-bold text-white leading-normal">
-                        Implementar un Sistema (AVI) que cambie la seguridad del BCP de <strong class="text-red-400">REACTIVA</strong> a <strong class="text-green-400">PROACTIVA</strong>, uniendo la seguridad física y digital para prevenir incidentes.
+                        Implementar un Sistema de Agentes de Seguridad Integral para transformar la seguridad interna del BCP de un modelo <strong class="text-red-400">reactivo</strong> a uno <strong class="text-green-400">proactivo</strong>, mediante la automatización y correlación inteligente de amenazas físicas (video) y lógicas (logs).
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 23: Objetivos Específicos --><section class="slide">
+        <!-- Slide 22: 5.2 Objetivos Específicos -->
+        <section class="slide">
             <div class="slide-content">
-                <h2 class="slide-title">5. Objetivos: Específicos</h2>
+                <h2 class="slide-title">5.2 Objetivos Específicos</h2>
                 <ul class="slide-text list-disc list-inside space-y-4">
-                    <li>Desarrollar los "Agentes Vigilantes" (**Go** con **YOLO**) para analizar cámaras en el sitio.</li>
-                    <li>Guardar las alertas y sus "huellas digitales" (**pgvector**) en la base de datos central.</li>
-                    <li>Asegurar que el sistema sea fácil de mantener y actualizar automáticamente (**Terraform**, **GitHub Actions**).</li>
-                    <li>Conectar las alertas con <strong class="text-white">notificaciones internas</strong> para automatizar la respuesta.</li>
+                    <li>Desarrollar una arquitectura de microservicios escalable, con un orquestador en <strong class="text-cyan-300">Go</strong> y agentes de IA en <strong class="text-cyan-300">Python/LangGraph</strong>, capaz de procesar datos de <strong class="text-cyan-300">YOLO</strong> y <strong class="text-cyan-300">PRTG</strong>.</li>
+                    <li>Implementar un equipo de agentes de IA (Visión, Logs, Correlación) que analicen patrones (merodeo) y los correlacionen con eventos de red (fallas ATM) para generar alertas proactivas.</li>
+                    <li>Desplegar un <strong class="text-yellow-300">MVP</strong> en agencias seleccionadas para validar la reducción de falsos positivos y la detección temprana de incidentes.</li>
                 </ul>
             </div>
         </section>
         
-        <!-- === 6. UBICACIÓN === --><!-- Slide 24: Ubicación --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">6. Ubicación del Proyecto</h2>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Gestión y Desarrollo:</strong> Sede Central del BCP (Calle Centenario 156, La Molina, Lima).</li>
-                    <li><strong class="text-blue-300">Fase 1 (Piloto):</strong> Se desplegará en 5 agencias seleccionadas de Lima Metropolitana.</li>
-                    <li><strong class="text-blue-300">Fase 2 (Despliegue):</strong> Expansión a todas las agencias de Lima Metropolitana.</li>
-                </ul>
-                <!-- Placeholder para el croquis --><div class="w-full h-48 bg-blue-900 rounded-lg mt-6 flex items-center justify-center text-blue-300">
-                    [Aquí se puede insertar una imagen del mapa o croquis]
-                </div>
-            </div>
-        </section>
-
-        <!-- === 7. BENEFICIARIOS === --><!-- Slide 25: Beneficiarios --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">7. Beneficiarios</h2>
-                <div class="grid grid-cols-2 gap-6">
-                    <div>
-                        <h3 class="slide-subtitle text-green-400">Directos</h3>
-                        <ul class="slide-text list-disc list-inside">
-                            <li><strong>Clientes:</strong> Más seguros en agencias y cajeros.</li>
-                            <li><strong>Personal de Seguridad:</strong> Más efectivos y menos estresados (se enfocan en alertas reales).</li>
-                            <li><strong>BCP (Institución):</strong> Menos pérdidas por fraudes.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="slide-subtitle text-blue-300">Indirectos</h3>
-                        <ul class="slide-text list-disc list-inside">
-                            <li><strong>Gerentes:</strong> Mejores reportes y métricas.</li>
-                            <li><strong>Accionistas:</strong> Más valor y reputación.</li>
-                            <li><strong>Reguladores (SBS):</strong> Cumplimiento tecnológico.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- === 8. METAS Y RESULTADOS === --><!-- Slide 26: Metas (Cuantificables) --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">8. Metas y Resultados (Lo que mediremos)</h2>
-                <h3 class="slide-subtitle">Metas del MVP (3 Meses)</h3>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">5 Agentes (Go)</strong> instalados y funcionando en 5 agencias piloto.</li>
-                    <li><strong class="text-white">100%</strong> del video de zonas ATM procesado en tiempo real.</li>
-                    <li><strong class="text-green-400">> 90% de precisión</strong> de la IA (pocas falsas alarmas).</li>
-                    <li>Tiempo de Detección: <strong class="text-green-400">Menos de 30 segundos</strong> (vs. "minutos u horas" del monitoreo manual).</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Slide 27: Efectos Esperados --><section class="slide">
-            <div class="slide-content">
-                <h2 class="slide-title">8. Metas y Resultados (El impacto a futuro)</h2>
-                <h3 class="slide-subtitle">Efectos Esperados del Proyecto</h3>
-                <ul class="slide-text list-disc list-inside space-y-3">
-                    <li><strong class="text-white">Cambio Cultural:</strong> Mover al equipo de seguridad de "revisar videos" a "prevenir crímenes".</li>
-                    <li><strong class="text-yellow-300">La "Ventaja Secreta" (Moat):</strong> Crear la primera base de datos de "huellas" de amenazas para detectar bandas.</li>
-                    <li><strong class="text-white">Ser un Modelo a Seguir:</strong> Demostrar esta nueva forma de construir software ágil para futuros proyectos del banco.</li>
-                    <li><strong class="text-white">Ahorro de Costos:</strong> Reducción de costos de vigilancia manual.</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Slide 28: Conclusión --><section class="slide">
+        <!-- Slide 23: Conclusión -->
+        <section class="slide">
             <div class="slide-content text-center">
                 <h1 class="text-5xl font-bold text-white mb-6">
                     Muchas Gracias
                 </h1>
                 <p class="text-2xl text-blue-200">Listos para transformar la seguridad del BCP.</p>
+                <p class="text-xl text-blue-100 mt-8 font-semibold">
+                    Felipe Ostos Bermudez
+                </p>
             </div>
         </section>
         
     </main>
 
-    <!-- Controles de Navegación --><div class="fixed bottom-8 w-full px-8 flex justify-between z-20">
+    <!-- Controles de Navegación -->
+    <div class="fixed bottom-8 w-full px-8 flex justify-between z-20">
         <button id="prevBtn" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
             ← Anterior
         </button>
         <div id="slideCounter" class="text-white text-lg font-semibold bg-black/30 py-3 px-6 rounded-full">
-            1 / 29
+            1 / 24
         </div>
         <button id="nextBtn" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
             Siguiente →
         </button>
     </div>
 
-    <!-- Lógica de JavaScript para el Slider --><script>
+    <!-- Lógica de JavaScript para el Slider -->
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             const slides = document.querySelectorAll('.slide');
             const prevBtn = document.getElementById('prevBtn');
@@ -640,7 +541,7 @@
             const menuLinks = document.querySelectorAll('.menu-link');
 
             let currentSlide = 0;
-            const totalSlides = slides.length;
+            const totalSlides = slides.length; // ¡Se actualizará automáticamente a 24!
 
             // Función para abrir/cerrar menú
             function toggleMenu() {
@@ -649,13 +550,11 @@
                     navMenu.classList.remove('translate-x-0');
                     navMenu.classList.add('-translate-x-full');
                     menuOverlay.classList.add('opacity-0');
-                    // Ocultar el overlay después de la transición
                     setTimeout(() => menuOverlay.classList.add('hidden'), 300); 
                 } else {
                     navMenu.classList.add('translate-x-0');
                     navMenu.classList.remove('-translate-x-full');
                     menuOverlay.classList.remove('hidden');
-                    // Mostrar el overlay con transición
                     setTimeout(() => menuOverlay.classList.remove('opacity-0'), 10); 
                 }
             }
